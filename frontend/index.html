@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Web Scraping</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container flex-center">
+        <main class="pink-border">
+            <header>
+                <span>Obter o melhor preco do Ryzen no Mercado Livre</span>
+            </header>
+            <form id="webScrapingForm" action="">
+                <label for="name">Digite seu nome</label>
+                <input type="text" name="name" id="name" required/>
+                <label for="email">Digite o seu e-mail</label>
+                <input type="email" name="email" id="email" required/>
+                <label for="model">Selecione o modelo</label>
+                <select name="model" id="model">
+                    <option value="" selected>Selecione</option>
+                    <option value="5600">Ryzen 5 5600</option>
+                    <option value="7600">Ryzen 5 7600</option>
+                    <option value="5700">Ryzen 7 5700x3d</option>
+                    <option value="5800">Ryzen 7 5800x3d</option>
+                    <option value="7800">Ryzen 7 7800x3d</option>
+                    <option value="7900">Ryzen 9 7900x3d</option>
+                </select>
+                <label for="price">Selecione o valor</label>
+                <input type="number" name="price" id="price" required min="1" max="10000" value="1299.99" step="0.01" placeholder="Digite um valor entre 1 e 10000"/>
+                <label for="range">Selecione o intervalo de valor</label>
+                <input type="number" name="range" id="range" required min="1" max="1000" value="300.00" step="0.01" placeholder="Digite um valor entre 1 e 1000"/>
+                <input type="submit" value="Enviar"/>
+            </form>
+        </main>
+        <script src="scripts.js"></script>
+    </div>
+</body>
+</html>

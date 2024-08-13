@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.7);
+    flex-direction: column;
+    min-height: 60vh;
+    width: 70vh;
+    font-family: 'Montserrat';
+}
+
+main header {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+form input {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+}
+
+form input:hover {
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+form input:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+form input[type="submit"] {
+    background-color: #bd007b;
+    width: 10vh;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: blueviolet;
+}
+
+form select {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 92.7%;
+}
+
+form select:hover {
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+form select:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pink-border {
+    border: 5px #bd007b solid;
+    border-radius: 15px;
+}
